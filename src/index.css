@@ -1,13 +1,509 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  min-width: 415px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+ul {
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* HEADER */
+
+.Header {
+  box-sizing: border-box;
+  margin: 40px auto;
+  max-width: 1240px;
+  width:90%;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  margin-bottom:60px;
+}
+
+.link-navbar {
+  margin-left:60px;
+  color:#FF6060;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+
+
+/* MAIN PAGE */
+
+.mainhome {
+  box-sizing: border-box;
+  margin:45px auto;
+
+  background-color: #F7F7F7;
+  max-width:1240px;
+  width:90%;
+  height:auto;
+  border-radius: 25px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding:56px 50px;
+  flex-flow: row wrap;
+}
+
+.bgbanner {
+  background:url('./images/banner.png') no-repeat;
+  background-size:cover;
+  background-position:center;
+  max-width: 1240px;
+  width:90%;
+  height:223px;
+  margin:0 auto;
+  border-radius: 25px;
+  box-sizing: border-box;
+}
+
+.Banner {
+  background-color:rgba(0, 0, 0, 0.3);
+  height:223px;
+  box-sizing: border-box;
+  margin:0 auto;
+  border-radius: 25px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding:0 100px;
+}
+
+.bannertext{
+  font-size: 48px;
+  color:white;
+ 
+}
+
+.card {
+  box-sizing: border-box;
+  background-color:#FF6060;
+  border-radius: 10px;
+  width:340px;
+  height:340px;
+  margin-bottom:50px;
+  position:relative;
+  padding:20px;
+  background-size: cover;
+  text-shadow:0 0 3px #000
+
+  
+}
+
+
+.card div {
+  position:absolute;
+  bottom:20px;
+  height:52px;
+  color:white;
+  font-size: 18px;
+}
+
+
+
+/* FOOTER */
+
+footer {
+  width:100%;
+  height:209px;
+  margin-top:200px;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footerimg {
+  margin: 0 auto;
+  width:122px;
+  height:auto;
+  margin-bottom:30px;
+
+}
+.footertext{
+  color:white;
+  font-size:24px;
+}
+
+
+
+/* A PROPOS PAGE */
+
+.secondbanner {
+  background:url("./images/Background.png") no-repeat;
+  background-size:cover;
+  background-position:center;
+  max-width: 1240px;
+  width:90%;
+  height: 223px;
+  border-radius: 25px;
+  margin: 0 auto;
+  margin-bottom: 33px;
+}
+
+.smallcontainer {
+  width:100%;
+  height:auto;
+  
+  margin-bottom:30px;
+  
+  
+}
+
+.titlecontainer {
+  display:flex;
+  background-color: #FF6060;
+  height:47px;
+  padding:0 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.title {
+  box-sizing: border-box;
+  color:white;
+  font-size: 24px;
+  line-height:47px;
+  width:200px;
+  font-weight: 500;
+
+}
+.description {
+  background-color: #F7F7F7;
+  padding:20px;
+  color:#FF6060;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 5px;
+  transition:all 150ms;
+  transform-origin: 50% 0%;
+}
+.fas {
+  color:white;
+  margin-right:16px;
+  transition: all 150ms;
+}
+
+.mainpropos{
+  max-width: 1023px;
+  width:80%;
+  box-sizing: border-box;
+  margin:0 auto; 
+}
+
+
+
+
+/* LOCATION PAGE */
+
+.locationcontainer {
+max-width: 1440px;
+width:90%;
+margin:0 auto;
+position:relative;
+top:-40px;
+
+}
+.locationbanner{
+  background-color: blue;
+  width:100%;
+  height:415px;
+  border-radius: 25px;
+  margin-bottom:30px;
+}
+
+.locationtitle{
+  color:#FF6060;
+  font-size: 36px;
+}
+.locationplace {
+  color: #FF6060;
+  font-size: 18px;
+  margin-bottom:20px;
+}
+.tagcontainer {
+  display:flex;
+  margin-bottom:25px;
+
+}
+.locationtag {
+  margin-right:10px;
+  background-color: #FF6060;
+  color:white;
+  border-radius: 10px;
+  width:115px;
+  height:25px;
+  text-align: center;
+  line-height: 25px;
+  
+  font-size: 14px;
+
+}
+.small {
+  font-size: 18px;
+  border-radius: 10px;
+}
+.height{
+  height:250px;
+  display:flex;
+  align-items: center;
+  line-height: 25px;
+  position: relative;
+  top:-10px;
+  z-index:-1
+ 
+  
+}
+#descriptionlocation{
+  margin-right:20px;
+  margin-bottom:20px;
+}
+.locationsmallcontainer {
+  max-width:582px;
+  width:45%;
+  max-height:250px;
+  height:auto;
+  
+
+
+}
+.bottomcontainer {
+  display:flex;
+  justify-content: space-between;
+}
+
+.locationsecondcontainer {
+  display:flex;
+  justify-content: space-between;
+}
+.locationname {
+  width:min-content;
+  color:#FF6060;
+  font-size: 18px;
+  text-align: end;
+  line-height: 32px;
+  height:64px;
+}
+
+.locationprofil{
+  width:64px;
+  height:64px;
+  border-radius: 64px;
+  background-color: #C4C4C4;
+  margin-left: 10px;
+}
+
+.namepicture{
+  display:flex;
+  margin-bottom: 20px;
+}
+
+.rating {
+  display:flex;
+  margin-bottom:16px;
+}
+
+.starfull {
+  width:30px;
+  height:30px;
+  background: url("../src/images/fullstar.png");
+  margin-left:10px;
+}
+.starempty {
+  width:30px;
+  height:30px;
+  background: url("../src/images/emptystar.png");
+  margin-left:10px;
+}
+
+/* ERROR PAGE */
+.errorcontainer {
+  max-width:1240px;
+  margin:0 auto;
+}
+.errortitle {
+  color:#FF6060;
+  font-size: 288px ;
+  font-weight: 700;
+  margin:0 auto;
+  margin-bottom: 66px;
+  width: min-content;
+}
+
+.erroroups {
+  color:#FF6060;
+  font-size: 36px;
+  margin:0 auto;
+  margin-bottom: 180px;
+  max-width:875px;
+  padding:0 10%
+}
+.errorlink {
+  display:block;
+  font-size: 18px;
+  color:#FF6060;
+  margin:0 auto;
+  width:285px;
+}
+
+@media screen and (max-width:955px) {
+  .locationsmallcontainer{
+    width:95%;
+
+  }
+  .bottomcontainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .height {
+    height:auto;
+    padding:20px;
+  
+  }
+}
+
+@media screen and (min-width:1160px){
+  .mainhome::after{
+    content:"";
+    box-sizing: border-box;
+    border-radius: 10px;
+    width:340px;
+    height:340px;
+    margin-bottom:50px;
+    position:relative;
+    padding:20px;
+  
+  }
+
+
+}
+@media screen and (max-width:885px){
+  .mainhome{
+    
+    background-color: white;
+    flex-direction: column;
+    margin:20px auto;
+    align-items: center;
+    padding:0;
+  }
+  .locationsecondcontainer{
+    flex-direction: column;
+  }
+  .locationratingcontainer{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:16px;
+  }
+  .namepicture{
+    margin:0;
+    display:flex;
+    align-items: center;
+  }
+  .locationprofil {
+    height:32px;
+    width:32px;
+    border-radius: 32px;
+  }
+  .locationname{
+    line-height: 16px;
+    height:min-content;
+  }
+  .starempty, .starfull {
+    width:15px;
+    height:15px;
+    background-size: contain;
+  }
+  #descriptionlocation{
+  margin:0;
+  }
+}
+@media screen and (max-width:695px) {
+  .bgbanner, .Banner{
+    height:111px;
+   
+  }
+  .bannertext {
+    font-size: 24px;
+  }
+  .Header {
+    height:20px;
+    margin-bottom:20px;
+  }
+  .Header img {
+    height:40px;
+  }
+  .link-navbar {
+    font-size: 12px;
+  }
+  .card {
+    width:335px;
+    height:255px;
+    margin-bottom:20px;
+  }
+  footer {
+    margin-top:0px;
+  }
+  .footertext {
+    font-size: 12px;
+  }
+  .titlecontainer {
+    height:30px;
+  }
+  .title{
+    font-size: 13px;
+  }
+  .description {
+    font-size: 12px;
+  }
+  .errortitle {
+    font-size: 96px;
+    margin-bottom: 11px;
+  }
+  .erroroups{
+    font-size:18px;
+    margin-bottom: 130px;
+  }
+  .errorlink{
+    font-size: 14px;
+  }
+  .locationtitle{
+    font-size: 18px;
+  }
+  .locationplace {
+    font-size: 14px;;
+  }
+  .locationtag{
+    width:84px;
+    height:18px;
+    font-size:10px;
+    line-height: 18px;
+  }
+  .locationname {
+    font-size: 12px;
+  }
+  .locationbanner{
+    margin-top:70px;
+  }
+  .smallcontainer {
+   
+    margin-bottom: 20px;
+  }
+
 }
