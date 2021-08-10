@@ -1,9 +1,11 @@
-function LocationRating() {
+function LocationRating(props) {
+   console.log(props)
+
     return (
         <div className="locationratingcontainer">
             <div className="namepicture">
-                <div className="locationname">Alexandre Dumas</div>
-                <div className="locationprofil"></div>
+                <div className="locationname">{props.host.name}</div>
+                <div style={{background:'url("'+(props.host.picture)+'")' }} className="locationprofil"></div>
             </div>
             <div className="rating">
                 <div className="starfull"></div>
@@ -15,4 +17,7 @@ function LocationRating() {
         </div>
     )
 }
+
+
+//Faire une boucle pour créer les étoiles
 export default LocationRating

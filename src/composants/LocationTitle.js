@@ -1,7 +1,8 @@
 
-function LocationTitle(){
+function LocationTitle(props){
+    const title= props.title
     return (
-    <div className="locationtitle">Cozy loft on the Canal Saint-Martin</div>
+    <div className="locationtitle">{title}</div>
     )
 }
 

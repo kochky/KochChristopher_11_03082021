@@ -1,10 +1,10 @@
 
-function LocationTag(){
+function LocationTag(props){
+    const tags= props.tags
     return (
         <div className="tagcontainer">
-    <div className="locationtag">Cozy </div>
-    <div className="locationtag">Canal </div>
-    <div className="locationtag">Paris 10</div>
+            {tags.map((tag)=>( <div className="locationtag">{tag}</div>))}
+   
     </div>
     )
 }

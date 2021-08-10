@@ -10,26 +10,30 @@ import React from 'react';
 import {
     useParams
   } from "react-router-dom";
+import LogementList from "../logement"
+
 
 function Location() {
     let { id } = useParams();
-    console.log(id)
+    let logement= LogementList().find(x=>x.id === id)
+    console.log(logement)
+
 return (
     <React.Fragment>
         <div className="locationcontainer">
-            <LocationBanner />
+            <LocationBanner cover={logement.cover} />
             <div className="locationsecondcontainer">
                 <div>
-                    <LocationTitle/>
-                    <LocationPlace/>
-                    <LocationTag/>
+                    <LocationTitle title={logement.title}/>
+                    <LocationPlace location={logement.location}/>
+                    <LocationTag tags={logement.tags}/>
                 </div>
 
-                    <LocationRating/>
+                    <LocationRating rating={logement.rating} host={logement.host}/>
             </div>
             <div className="bottomcontainer">
-                <LocationDescription/>
-                <LocationEquipement/>
+                <LocationDescription description={logement.description}/>
+                <LocationEquipement  equipments={logement.equipments}/>
             </div>   
 
 

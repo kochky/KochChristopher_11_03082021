@@ -1,7 +1,8 @@
 
-function LocationBanner(){
+function LocationBanner(props){
+    const cover = props.cover
     return (
-        <div className="locationbanner"></div>
+        <div style={{background:'url("'+(cover)+'")' }} className="locationbanner"></div>
         
     )
     

@@ -1,7 +1,8 @@
 
-function LocationPlace(){
+function LocationPlace(props){
+    const location= props.location
     return (
-    <div className="locationplace">Paris, Île-de-France</div>
+    <div className="locationplace">{location}</div>
     )
 }
 
