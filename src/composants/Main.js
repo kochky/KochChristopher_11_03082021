@@ -9,7 +9,8 @@ function Main(){
     return (
         <main className="mainhome">
             {LogementList().map((logement) => (
-              <Link to={(logement.id)} style={{
+              <Link to={`/location/${logement.id}`} 
+              style={{
                   backgroundImage:'url("'+(logement.cover)+'")'
                 }} 
                 key={logement.id} id={(logement.id)} className='card'> <div>{logement.title}</div></Link>

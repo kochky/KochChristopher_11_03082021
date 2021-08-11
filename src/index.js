@@ -25,7 +25,7 @@ ReactDOM.render(
         <Route path="/propos">
           <Propos />
         </Route>
-        <Route path="/:id">
+        <Route path="/location/:id">
           <Location />
         </Route>
         <Route>

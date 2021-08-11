@@ -16,7 +16,7 @@ import LogementList from "../logement"
 function Location() {
     let { id } = useParams();
     let logement= LogementList().find(x=>x.id === id)
-    console.log(logement)
+
 
 return (
     <React.Fragment>

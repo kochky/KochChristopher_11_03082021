@@ -225,6 +225,16 @@ top:-40px;
   align-items: center;
   padding: 0 23px;
 }
+.left-arrow:active, .right-arrow:active {
+  color: rgba(0,0,0, 0.3);
+}
+.right-arrow:hover {
+  text-shadow: -5px 5px 5px rgba(0,0,0, 0.1);
+}
+
+.left-arrow:hover {
+  text-shadow: 5px 5px 5px rgba(0,0,0, 0.3);
+}
 
 .locationtitle{
   color:#FF6060;
