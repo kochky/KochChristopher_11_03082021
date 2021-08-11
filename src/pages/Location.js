@@ -16,11 +16,12 @@ import LogementList from "../logement"
 function Location() {
     let { id } = useParams();
     let logement= LogementList().find(x=>x.id === id)
+    console.log(logement)
 
 return (
     <React.Fragment>
         <div className="locationcontainer">
-            <LocationBanner cover={logement.cover} />
+            <LocationBanner cover={logement.pictures} />
             <div className="locationsecondcontainer">
                 <div>
                     <LocationTitle title={logement.title}/>

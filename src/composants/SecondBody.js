@@ -1,5 +1,5 @@
 
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 
 
@@ -13,7 +13,7 @@ function SmallContainer(props){
         <div className="smallcontainer">
             <div className="titlecontainer">
                 <div className="title">{props.title}</div>
-                <i style={{transform: 'rotate(0deg)'}}class="fas fa-chevron-down fa-lg" onClick={() => setIsOpen(false)}></i>
+                <i style={{transform: 'rotate(0deg)'}}className="fas fa-chevron-down fa-lg" onClick={() => setIsOpen(false)}></i>
             </div>
             <div style={{transform: 'scaleY(0)',height:'0px',display:"none"}} className="description">{props.description}</div>
         </div>
@@ -21,7 +21,7 @@ function SmallContainer(props){
         <div className="smallcontainer">
             <div className="titlecontainer">
                 <div className="title">{props.title}</div>
-                <i style={{transform: 'rotate(180deg)'}}class="fas fa-chevron-down fa-lg" onClick={() => setIsOpen(true)}></i>
+                <i style={{transform: 'rotate(180deg)'}}className="fas fa-chevron-down fa-lg" onClick={() => setIsOpen(true)}></i>
             </div>
             <div style={{transform: 'scaleY(1)',height:'auto',display:"block"}}className="description">{props.description}</div>
         </div>

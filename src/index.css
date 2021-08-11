@@ -84,7 +84,6 @@ a:hover{
 .bannertext{
   font-size: 48px;
   color:white;
- 
 }
 
 .card {
@@ -98,8 +97,7 @@ a:hover{
   padding:20px;
   background-size: cover;
   text-shadow:0 0 3px #000
-
-  
+ 
 }
 
 
@@ -157,10 +155,7 @@ footer {
 .smallcontainer {
   width:100%;
   height:auto;
-  
   margin-bottom:30px;
-  
-  
 }
 
 .titlecontainer {
@@ -211,19 +206,24 @@ footer {
 /* LOCATION PAGE */
 
 .locationcontainer {
-max-width: 1440px;
+max-width: 1240px;
 width:90%;
 margin:0 auto;
 position:relative;
 top:-40px;
-
 }
+
 .locationbanner{
-  background-size: cover;
+  box-sizing: border-box;
+  background-size: contain;
   width:100%;
   height:415px;
   border-radius: 25px;
   margin-bottom:30px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 23px;
 }
 
 .locationtitle{
@@ -248,15 +248,15 @@ top:-40px;
   width:115px;
   height:25px;
   text-align: center;
-  line-height: 25px;
-  
+  line-height: 25px; 
   font-size: 14px;
-
 }
+
 .small {
   font-size: 18px;
   border-radius: 10px;
 }
+
 .height{
   height:250px;
   display:flex;
@@ -265,22 +265,20 @@ top:-40px;
   position: relative;
   top:-10px;
   z-index:-1
- 
-  
 }
+
 #descriptionlocation{
   margin-right:20px;
   margin-bottom:20px;
 }
+
 .locationsmallcontainer {
   max-width:582px;
   width:45%;
   max-height:250px;
   height:auto;
-  
-
-
 }
+
 .bottomcontainer {
   display:flex;
   justify-content: space-between;
@@ -290,6 +288,7 @@ top:-40px;
   display:flex;
   justify-content: space-between;
 }
+
 .locationname {
   width:min-content;
   color:#FF6060;
@@ -303,9 +302,7 @@ top:-40px;
   width:64px;
   height:64px;
   border-radius: 64px;
-  background-size: cover;
   margin-left: 10px;
-
 }
 
 .namepicture{
@@ -324,6 +321,7 @@ top:-40px;
   background: url("../src/images/fullstar.png");
   margin-left:10px;
 }
+
 .starempty {
   width:30px;
   height:30px;
@@ -336,6 +334,7 @@ top:-40px;
   max-width:1240px;
   margin:0 auto;
 }
+
 .errortitle {
   color:#FF6060;
   font-size: 288px ;

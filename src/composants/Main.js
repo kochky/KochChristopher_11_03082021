@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 function Main(){
-    console.log(LogementList()) 
+
 
     return (
         <main className="mainhome">
