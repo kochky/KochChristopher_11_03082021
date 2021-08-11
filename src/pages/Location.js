@@ -16,7 +16,6 @@ import LogementList from "../logement"
 function Location() {
     let { id } = useParams();
     let logement= LogementList().find(x=>x.id === id)
-    console.log(logement)
 
 return (
     <React.Fragment>
@@ -29,7 +28,7 @@ return (
                     <LocationTag tags={logement.tags}/>
                 </div>
 
-                    <LocationRating rating={logement.rating} host={logement.host}/>
+                    <LocationRating ratings={logement.rating} host={logement.host}/>
             </div>
             <div className="bottomcontainer">
                 <LocationDescription description={logement.description}/>
