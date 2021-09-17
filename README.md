@@ -2,7 +2,7 @@
 
 ***Développez une application Web avec React et React Router***:
 
-Respect maquette+ developper application, et composants Reactà base de Class, et routes React Router
+Respect maquette + developper application, et composants React à base de Class, et routes React Router
 
 ## For Developers
 
