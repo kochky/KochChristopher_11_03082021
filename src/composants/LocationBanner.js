@@ -1,20 +1,24 @@
-import { useState } from 'react'
+import React from 'react';
 
+export default class LocationBanner extends React.Component  {
 
-function LocationBanner(props){
-    const [coverImg, setCoverImg] = useState(props.cover[0])
-    const indexImg = props.cover.indexOf(coverImg)
-    const numberOfImg= props.cover.length -1
+    constructor(props) {
+        super(props);
+        this.state = { coverImg: this.props.cover[0] };
+       
+      }
+  
+    render (){
+        const indexImg = this.props.cover.indexOf(this.state.coverImg)
+        const numberOfImg= this.props.cover.length -1
 
-     
-    return props.cover.length >1 ?(
-        <div style={{background:'center no-repeat  url("'+(coverImg)+'")'}}  className="locationbanner">
-               <i onClick={() => {indexImg === 0  ? setCoverImg(props.cover[numberOfImg]) : setCoverImg(props.cover[indexImg -1])}} className="fas fa-chevron-left fa-5x left-arrow"></i>
-                <i  onClick={() => {indexImg === numberOfImg  ? setCoverImg(props.cover[0]) : setCoverImg(props.cover[indexImg +1])}} className="fas fa-chevron-right fa-5x right-arrow"></i>
-        </div>
+        return this.props.cover.length >1 ?(
+            <div style={{background:'center no-repeat  url("'+(this.state.coverImg)+'")'}}  className="locationbanner">
+                   <i onClick={() => {indexImg === 0  ? this.setState({coverImg :this.props.cover[numberOfImg]}) : this.setState({coverImg:this.props.cover[indexImg -1]})}} className="fas fa-chevron-left fa-5x left-arrow"></i>
+                    <i  onClick={() => {indexImg === numberOfImg  ? this.setState({coverImg:this.props.cover[0]}) :this.setState({coverImg:this.props.cover[indexImg +1]})}} className="fas fa-chevron-right fa-5x right-arrow"></i>
+            </div>
+            
+        ):(<div style={{background:'no-repeat url("'+(this.state.coverImg)+'")'}}  className="locationbanner"></div>)
         
-    ):(<div style={{background:'no-repeat url("'+(coverImg)+'")'}}  className="locationbanner"></div>)
-    
+    }
 }
-
-export default LocationBanner

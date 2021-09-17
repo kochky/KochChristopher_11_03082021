@@ -1,12 +1,13 @@
+import React from "react"
 
-function LocationTag(props){
-    const tags= props.tags
-    return (
-        <div className="tagcontainer">
-            {tags.map((tag)=>( <div  key={tag} className="locationtag">{tag}</div>))}
-   
-    </div>
-    )
+export default class LocationTag extends React.Component{
+    render(){
+        const tags= this.props.tags
+        return (
+            <div className="tagcontainer">
+                {tags.map((tag)=>( <div  key={tag} className="locationtag">{tag}</div>))}
+        </div>
+        )
+    }
 }
 
-export default LocationTag

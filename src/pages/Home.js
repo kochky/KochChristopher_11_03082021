@@ -5,16 +5,15 @@ import React from 'react';
 import Footer from '../composants/Footer'
 
 
-function Home () {
-    return (
-        <React.Fragment>
-       
-            
-            <Banner />
-            <Main />
-            <Footer />
-
-        </React.Fragment>
-    )
+export default class Home extends React.Component{
+    render(){
+        return (
+            <React.Fragment>
+                <Banner />
+                <Main />
+                <Footer />
+    
+            </React.Fragment>
+        )
+    }
 }
-export default Home

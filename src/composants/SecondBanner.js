@@ -1,8 +1,6 @@
-
-
-function SecondBanner(){
-    return <div className="secondbanner"></div>
-    
+import React from "react"
+export default class SecondBanner extends React.Component{
+    render(){
+        return <div className="secondbanner"></div>
+    }  
 }
-
-export default SecondBanner

@@ -1,9 +1,13 @@
+import React from "react"
 
-function LocationTitle(props){
-    const title= props.title
-    return (
-    <div className="locationtitle">{title}</div>
-    )
-}
+export default class LocationTitle extends React.Component {
 
-export default LocationTitle
+    render(){
+        const title= this.props.title
+        return (
+        <div className="locationtitle">{title}</div>
+        )
+    }
+}  
+
+

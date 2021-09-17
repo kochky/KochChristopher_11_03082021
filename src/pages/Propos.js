@@ -3,17 +3,15 @@ import SecondBanner from '../composants/SecondBanner';
 import SecondBody from '../composants/SecondBody'
 import Footer from '../composants/Footer'
 
-function Propos() {
-    return (
-        <React.Fragment>
-      
-            
-            <SecondBanner/>
-            <SecondBody/>
-           
-            <Footer/>
-        </React.Fragment>
-    )
+export default class Propos extends React.Component{
+    render(){
+        return (
+            <React.Fragment>
+                <SecondBanner/>
+                <SecondBody/>
+                <Footer/>
+            </React.Fragment>
+        )
+    }
 }
 
-export default Propos
