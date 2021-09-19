@@ -17,7 +17,7 @@ class Location extends React.Component{
         
         const id = this.props.match.params.id;
         const logement= LogementList().find(x=>x.id === id)
-        console.log(logement)
+ 
         return logement?(
             <React.Fragment>
                 <div className="locationcontainer">

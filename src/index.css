@@ -212,6 +212,9 @@ margin:0 auto;
 position:relative;
 top:-40px;
 }
+.locationratingcontainer{
+  margin-left:20px;
+}
 
 .locationbanner{
   box-sizing: border-box;
@@ -322,7 +325,6 @@ top:-40px;
 
 .rating {
   display:flex;
-  margin-bottom:16px;
 }
 
 .starfull {
@@ -420,17 +422,14 @@ top:-40px;
     justify-content: space-between;
     align-items: center;
     margin-bottom:16px;
+    padding-right:5%;
   }
   .namepicture{
     margin:0;
     display:flex;
     align-items: center;
   }
-  .locationprofil {
-    height:32px;
-    width:32px;
-    border-radius: 32px;
-  }
+ 
   .locationname{
     line-height: 16px;
     height:min-content;
@@ -515,5 +514,9 @@ top:-40px;
    
     margin-bottom: 20px;
   }
-
+   .locationprofil {
+    height:32px;
+    width:32px;
+    border-radius: 32px;
+  }
 }
