@@ -1,7 +1,7 @@
 
 import React from 'react'
 import SmallContainer from './SmallContainer'
-export default class SecondBody extends React.Component{
+export default class AboutBody extends React.Component{
    render(){
     return (
         <main className="mainpropos">
