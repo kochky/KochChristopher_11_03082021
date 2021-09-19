@@ -9,13 +9,16 @@ import Footer from '../composants/Footer'
 import React from 'react';
 import LogementList from "../logement"
 import { withRouter } from "react-router";
+import { Redirect } from "react-router-dom";
 
 class Location extends React.Component{
 
     render(){
+        
         const id = this.props.match.params.id;
         const logement= LogementList().find(x=>x.id === id)
-        return (
+        console.log(logement)
+        return logement?(
             <React.Fragment>
                 <div className="locationcontainer">
                     <LocationBanner cover={logement.pictures} />
@@ -34,6 +37,7 @@ class Location extends React.Component{
                 </div>
                 <Footer />
             </React.Fragment>
+        ):(<Redirect to="/404" />
         )
     }
 }
