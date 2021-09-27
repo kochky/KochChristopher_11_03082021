@@ -9,7 +9,7 @@ import './index.css';
 import Home from './pages/Home'
 import Propos from './pages/Propos'
 import Header from './composants/Header';
-import ErrorPage from './composants/Error'
+import ErrorPage from './pages/Error'
 import Location from './pages/Location'
 
 
