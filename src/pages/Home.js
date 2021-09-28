@@ -2,7 +2,6 @@
 import Banner from '../composants/Banner';
 import Main from '../composants/Main';
 import React from 'react';
-import Footer from '../composants/Footer'
 
 
 export default class Home extends React.Component{
@@ -10,8 +9,7 @@ export default class Home extends React.Component{
         return (
             <React.Fragment>
                 <Banner />
-                <Main />
-                <Footer />
+                <Main />            
             </React.Fragment>
         )
     }

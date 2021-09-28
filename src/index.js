@@ -11,6 +11,8 @@ import Propos from './pages/Propos'
 import Header from './composants/Header';
 import ErrorPage from './pages/Error'
 import Location from './pages/Location'
+import Footer from './composants/Footer'
+
 
 
 ReactDOM.render(
@@ -31,6 +33,7 @@ ReactDOM.render(
           <ErrorPage />
         </Route>
       </Switch>
+      <Footer />
     
     </Router>
   </React.StrictMode>,

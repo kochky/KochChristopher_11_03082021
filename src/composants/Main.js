@@ -18,7 +18,7 @@ export default class Main extends React.Component{
     render(){
         return(
             <main className="mainhome"> 
-                {this.state.data ===false?(<div class="lds-ring"><div></div><div></div><div></div><div></div></div>)
+                {this.state.data ===false?(<div className="lds-ring"><div></div><div></div><div></div><div></div></div>)
                 :this.state.data}
             </main> )
         

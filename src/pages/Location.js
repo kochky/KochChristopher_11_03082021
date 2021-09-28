@@ -5,7 +5,6 @@ import LocationTag from '../composants/LocationTag'
 import LocationDescription from '../composants/LocationDescription'
 import LocationEquipement from '../composants/LocationEquipement'
 import LocationRating from '../composants/LocationRating'
-import Footer from '../composants/Footer'
 import React from 'react';
 import LogementList from "../logement"
 import { withRouter } from "react-router";
@@ -35,7 +34,6 @@ class Location extends React.Component{
                         <LocationEquipement  equipments={logement.equipments}/>
                     </div>   
                 </div>
-                <Footer />
             </React.Fragment>
         ):(<Redirect to="/404" />
         )

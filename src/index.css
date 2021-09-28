@@ -27,7 +27,7 @@ a:hover{
   box-sizing: border-box;
   margin: 40px auto;
   max-width: 1240px;
-  width:90%;
+  width:89%;
   display:flex;
   justify-content:space-between;
   align-items: center;
@@ -108,7 +108,7 @@ a:hover{
 
 .card div {
   position:absolute;
-  bottom:20px;
+  bottom:5px;
   height:52px;
   color:white;
   font-size: 18px;
@@ -352,10 +352,15 @@ top:-40px;
   margin-left:10px;
 }
 
+.fas {
+  margin:0;
+}
 /* ERROR PAGE */
 .errorcontainer {
   max-width:1240px;
   margin:0 auto;
+  margin-top:180px;
+  margin-bottom:100px;
 }
 
 .errortitle {
@@ -416,18 +421,19 @@ top:-40px;
 
 
 }
-@media screen and (max-width:885px){
+@media screen and (max-width:885px) {
   .mainhome{
-    
     background-color: white;
     flex-direction: column;
     margin:20px auto;
     align-items: center;
     padding:0;
   }
+
   .locationsecondcontainer{
     flex-direction: column;
   }
+
   .locationratingcontainer{
     display:flex;
     flex-direction: row-reverse;
@@ -436,6 +442,7 @@ top:-40px;
     margin-bottom:16px;
     padding-right:5%;
   }
+
   .namepicture{
     margin:0;
     display:flex;
@@ -446,92 +453,125 @@ top:-40px;
     line-height: 16px;
     height:min-content;
   }
+
   .starempty, .starfull {
     width:15px;
     height:15px;
     background-size: contain;
   }
+
   #descriptionlocation{
-  margin:0;
+    margin:0;
   }
-}
-@media screen and (max-width:695px) {
+  
   .bgbanner, .Banner{
     height:111px;
     width:340px;
     border-radius: 10px;
-   
   }
+
+  .Banner {
+    justify-content:flex-start;
+    padding:0 15px;
+  }
+
   .bannertext {
     font-size: 24px;
   }
+
   .Header {
     height:20px;
     margin-bottom:20px;
+    width:340px;
   }
+
   .Header img {
     height:40px;
   }
+ 
   .link-navbar {
     font-size: 12px;
+    margin-left:20px;
   }
+
   .card {
     width:335px;
     height:255px;
     margin-bottom:20px;
   }
+
   footer {
     margin-top:0px;
   }
+
   .footertext {
     font-size: 12px;
   }
+
   .titlecontainer {
     height:30px;
   }
+
   .title{
     font-size: 13px;
   }
+
   .description {
     font-size: 12px;
   }
+
   .errortitle {
     font-size: 96px;
     margin-bottom: 11px;
   }
+
   .erroroups{
     font-size:18px;
     margin-bottom: 130px;
   }
+
   .errorlink{
     font-size: 14px;
   }
+
   .locationtitle{
     font-size: 18px;
   }
+
   .locationplace {
     font-size: 14px;;
   }
+
   .locationtag{
     width:84px;
     height:18px;
     font-size:10px;
     line-height: 18px;
   }
+
   .locationname {
     font-size: 12px;
   }
+
   .locationbanner{
     margin-top:70px;
   }
+
   .smallcontainer {
-   
     margin-bottom: 20px;
+    width:340px;
   }
-   .locationprofil {
+
+  .locationprofil {
     height:32px;
     width:32px;
     border-radius: 32px;
+  }
+  .aboutbanner {
+    width:340px;
+  }
+  .mainpropos{
+    width:340px;
   }
 }
 
@@ -543,6 +583,7 @@ top:-40px;
   width: 80px;
   height: 80px;
 }
+
 .lds-ring div {
   box-sizing: border-box;
   display: block;
@@ -555,15 +596,19 @@ top:-40px;
   animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
   border-color: #fff transparent transparent transparent;
 }
+
 .lds-ring div:nth-child(1) {
   animation-delay: -0.45s;
 }
+
 .lds-ring div:nth-child(2) {
   animation-delay: -0.3s;
 }
+
 .lds-ring div:nth-child(3) {
   animation-delay: -0.15s;
 }
+
 @keyframes lds-ring {
   0% {
     transform: rotate(0deg);
