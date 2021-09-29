@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  min-width: 415px;
+
   font-weight: 500;
   font-family: 'Montserrat', sans-serif;
   position:relative;
@@ -167,6 +167,7 @@ footer {
   width:100%;
   height:auto;
   margin-bottom:30px;
+
 }
 
 .titlecontainer {
@@ -176,14 +177,13 @@ footer {
   padding:0 20px;
   justify-content: space-between;
   align-items: center;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .title {
   box-sizing: border-box;
   color:white;
   font-size: 24px;
-  line-height:47px;
   width:200px;
   font-weight: 500;
 
@@ -223,6 +223,7 @@ margin:0 auto;
 position:relative;
 top:-40px;
 }
+
 .locationratingcontainer{
   margin-left:20px;
 }
@@ -262,8 +263,8 @@ top:-40px;
 .tagcontainer {
   display:flex;
   margin-bottom:25px;
-
 }
+
 .locationtag {
   margin-right:10px;
   background-color: #FF6060;
@@ -292,7 +293,7 @@ top:-40px;
 }
 
 #descriptionlocation{
-  margin-right:20px;
+  /* margin-right:20px; */
   margin-bottom:20px;
 }
 
@@ -301,6 +302,7 @@ top:-40px;
   width:45%;
   max-height:250px;
   height:auto;
+  border-radius:10px;
 }
 
 .bottomcontainer {
@@ -378,21 +380,26 @@ top:-40px;
   margin:0 auto;
   margin-bottom: 180px;
   max-width:875px;
-  padding:0 10%
+  padding:0 10%;
+  text-align:center;
 }
+
 .errorlink {
   display:block;
   font-size: 18px;
   color:#FF6060;
   margin:0 auto;
   width:285px;
+  text-align:center;
+
 }
 
 @media screen and (max-width:955px) {
   .locationsmallcontainer{
     width:95%;
-
+    border-radius:5px !important;
   }
+
   .bottomcontainer {
     flex-direction: column;
     align-items: center;
@@ -401,7 +408,6 @@ top:-40px;
   .height {
     height:auto;
     padding:20px;
-  
   }
 
 }
@@ -439,8 +445,9 @@ top:-40px;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
+    margin:0;
     margin-bottom:16px;
-    padding-right:5%;
+    padding-right:5px;
   }
 
   .namepicture{
@@ -460,9 +467,6 @@ top:-40px;
     background-size: contain;
   }
 
-  #descriptionlocation{
-    margin:0;
-  }
   
   .bgbanner, .Banner{
     height:111px;
@@ -482,7 +486,9 @@ top:-40px;
   .Header {
     height:20px;
     margin-bottom:20px;
-    width:340px;
+    margin-top:25px;
+    width:335px;
+    font-size:12px;
   }
 
   .Header img {
@@ -510,6 +516,7 @@ top:-40px;
 
   .titlecontainer {
     height:30px;
+    border-radius:5px;
   }
 
   .title{
@@ -536,10 +543,12 @@ top:-40px;
 
   .locationtitle{
     font-size: 18px;
+    margin-bottom:5px;
   }
 
   .locationplace {
-    font-size: 14px;;
+    font-size: 14px;
+    margin-bottom:12px;
   }
 
   .locationtag{
@@ -555,6 +564,17 @@ top:-40px;
 
   .locationbanner{
     margin-top:70px;
+    width:335px;
+    height:255px;
+    border-radius: 10px;
+  }
+
+  .locationcontainer {
+    width:335px;
+  }
+
+  .tagcontainer {
+    margin-bottom:15px;
   }
 
   .smallcontainer {
@@ -562,17 +582,41 @@ top:-40px;
     width:340px;
   }
 
+  #descriptionlocation{
+    margin-right:0px;
+    margin-bottom:-20px;
+  }
+
+  .heightclose {
+    height:auto !important
+  }
   .locationprofil {
     height:32px;
     width:32px;
     border-radius: 32px;
   }
+
   .aboutbanner {
     width:340px;
+    border-radius: 10px;
   }
+
   .mainpropos{
     width:340px;
   }
+
+  .left-arrow{
+    position:absolute;
+    left:0;
+    margin-left:5px;
+  }
+
+  .right-arrow {
+    position:absolute;
+    right:0;
+    margin-right:5px;
+  }
+
 }
 
 /* LOADING SPINNING */
