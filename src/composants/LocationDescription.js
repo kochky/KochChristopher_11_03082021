@@ -8,8 +8,6 @@ export default class LocationDescription extends React.Component{
         this.setState({ width: window.innerWidth});
       };
       componentDidMount() {
-        console.log(this.state.width>900)
-
         window.addEventListener('resize', this.updateDimensions);
       }
       componentWillUnmount() {
